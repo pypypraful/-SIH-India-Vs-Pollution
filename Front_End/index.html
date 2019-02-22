@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  <title>Home</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -25,7 +25,7 @@
 
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="Logo.png" alt="mdb logo" style="width:268px;height:38px;">
+          <img src="Logo.png" alt="mdb logo" style="width:180px;height:38px;">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -40,25 +40,25 @@
             <a class="nav-link dropdown-toggle" id="newsDropdownMenu" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">NEWS</a>
             <div class="dropdown-menu dropdown-primary" aria-labelledby="newsDropdownMenu">
-              <a class="dropdown-item" href="#">NEWS RELEASES</a>
-              <a class="dropdown-item" href="#">BLOGS</a>
-              <a class="dropdown-item" href="#">IMPACT STORIES</a>
+              <a class="dropdown-item" href="nancy_news/index.html">NEWS RELEASES</a>
+              <a class="dropdown-item" href="Praful_Blog-Page4/blog.html">BLOGS</a>
+              <a class="dropdown-item" href="nancy_impactstories/index.html">IMPACT STORIES</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="issuesDropdownMenu" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">ISSUES</a>
             <div class="dropdown-menu dropdown-primary" aria-labelledby="issuesDropdownMenu">
-              <a class="dropdown-item" href="#">Create Issue</a>
+              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalContactForm">Create Issue</a>
               <a class="dropdown-item" href="#">View Issue</a>
               <a class="dropdown-item" href="SignPetition\Petition.html">Sign a Petition</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CAMPAIGN</a>
+            <a class="nav-link" href="Praful_Campaign-Page4/campaign.html">CAMPAIGN</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">LOGIN</a>
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm">LOGIN</a>
           </li>
         </ul>
       </div>
@@ -131,10 +131,10 @@
 <!--/.Carousel Wrapper-->
   
       <br>
-      <div class="container">
+<div class="container-fluid">
 <div class="row">
       <!-- Join our campaign starts -->
-      <div class="col-sm-8">
+      <div class="col-sm-9">
         <div class="card" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK9RIGJ9Dk17cSzQeYY-D7nqnpi7Se5oNR5t4lgm0Mp7d0xaP15A);">
           <div class="card-body">
 
@@ -316,7 +316,7 @@
 
 
     <!--Body Right Part   -->
-    <div class="col-sm-4">
+    <div class="col-sm-3">
 
       <!-- Card -->
       <div class="card" style="background: url(https://www.davidpsullivanlaw.com/briefcase/uploads/2016/11/sully-law-background-splash-v1.jpg);">
@@ -398,16 +398,11 @@
 
 
 
-
           </div>
           <!-- Grid column -->
 
         </div>
         <!-- Grid row -->
-
-
-
-
 
 
       </div>
@@ -420,8 +415,300 @@
 
 
 
-<!-- Main Body Ends -->
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-top: -50px;">
+  <div class="modal-dialog cascading-modal modal-dialog-centered" role="document">
+    <!--Content-->
+    <div class="modal-content">
 
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+              Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+              Register</a>
+          </li>
+        </ul>
+
+        <!-- Tab panels -->
+        <div class="tab-content">
+          <!--Panel 7-->
+          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+            <!--Body-->
+      <div class="modal-body mx-4">
+        <!--Body-->
+        <div class="md-form mb-5">
+        	<i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="Form-email1" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+        </div>
+
+        <div class="md-form pb-3">
+        	<i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="Form-pass1" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+          <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
+              Password?</a></p>
+        </div>
+
+        <div class="text-center mb-3">
+          <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
+        </div>
+        <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
+          with:</p>
+
+        <div class="row my-3 d-flex justify-content-center">
+          <!--Facebook-->
+          <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
+          <!--Twitter-->
+          <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-twitter"></i></button>
+          <!--Google +-->
+          <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"></i></button>
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="modal-footer mx-5 pt-3 mb-1">
+        <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="blue-text ml-1">
+            Sign Up</a></p>
+      </div>
+
+    </div>
+          <!--/.Panel 7-->
+
+          <!--Panel 8-->
+          <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+            <!--Body-->
+                 <!--Body-->
+      <div class="modal-body mx-4">
+        <!--Body-->
+        <div class="md-form mb-3">
+        	<i class="fas fa-user prefix grey-text"></i>
+          <input type="email" id="Form-email1" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="Form-email1">Enter Name</label>
+        </div>
+
+        <div class="md-form mb-3">
+        	<i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="Form-email1" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="Form-email1">Enter Email</label>
+        </div>
+
+        <div class="md-form mb-3">
+        	<i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="Form-pass1" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="Form-pass1">Enter Password</label>
+        </div>
+
+         <div class="md-form mb-3">
+        	<i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="Form-pass1" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="Form-pass1">Confirm Password</label>
+        </div>
+
+        <div class="md-form">
+        	    <i class="fas fa-phone prefix grey-text"></i>
+                <input type="number" id="phonenumber" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
+                <label for="phonenumber">Phone number (Optional)</label>
+              </div>
+
+        <div class="md-form">
+                <input type="checkbox" class="form-check-input" id="subscribe">
+                <label class="grey-text form-check-label" for="subscribe">Subscribe to our newsletter</label>
+            </div>
+
+        <div class="text-center mb-3">
+          <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign Up</button>
+        </div>
+        <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign Up
+          with:</p>
+
+        <div class="row my-3 d-flex justify-content-center">
+          <!--Facebook-->
+          <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
+          <!--Twitter-->
+          <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-twitter"></i></button>
+          <!--Google +-->
+          <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"></i></button>
+        </div>
+      </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-right">
+                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <!--/.Panel 8-->
+        </div>
+
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login / Register Form-->
+
+
+<!--Modal: Create Issue -->
+
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content" style="background-image: url(https://www.xmple.com/wallpaper/linear-green-white-gradient-1920x1080-c2-90ee90-ffffff-a-345-f-14.svg);">
+      <div class="modal-header text-center" style="background-color: #880E4F;">
+        <h4 class="modal-title w-100 font-weight-bold white-text">CREATE ISSUE</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+       <!-- Name -->
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Title of the Issue">
+
+    <!-- Email -->
+    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+    <!-- Subject -->
+    <select class="browser-default custom-select mb-4">
+        <option value="" selected>Category of Issue</option>
+        <option value="1">Air Pollution</option>
+        <option value="2">Water Pollution</option>
+        <option value="3">Noise Pollution</option>
+        <option value="4">Land Pollution</option>
+    </select>
+
+    <!-- Message -->
+    <div class="form-group">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Issue Description"></textarea>
+    </div>
+
+
+<div class="row">
+<!--Upload Image -->
+<div class="col-md-6 mb-4" >
+	<div class="card card-cascade narrower" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK9RIGJ9Dk17cSzQeYY-D7nqnpi7Se5oNR5t4lgm0Mp7d0xaP15A);">
+      <!--Card content-->
+      <div class="card-body card-body-cascade text-center">
+
+    <div class="form-group">
+        <label class="white-text">Upload Image</label>
+        <div class="input-group">
+            <span class="input-group-btn">
+                <span class="btn btn-md btn-default btn-file">
+                    Browse<input type="file" id="imgInp">                   
+                </span>
+            </span>
+            <input type="text" class="form-control" readonly style="margin-top: 7px; margin-left: -6px;">
+            
+        </div>
+        <img id='img-upload'/>
+    </div>
+</div>
+</div>
+</div>
+<!--Upload Image -->
+
+<!--Google map-->
+
+  <!--Grid column-->
+  <div class="col-md-6 mb-4" >
+
+    <!--Card-->
+    <div class="card card-cascade narrower" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK9RIGJ9Dk17cSzQeYY-D7nqnpi7Se5oNR5t4lgm0Mp7d0xaP15A);">
+
+      <!--Card content-->
+      <div class="card-body card-body-cascade text-center">
+       <label class="white-text">Mark Location on map</label>
+        <!--Google map-->
+        <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 300px">
+          <iframe src="https://maps.google.com/maps?q=Barcelona&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <!--/.Card content-->
+
+    </div>
+    <!--/.Card-->
+
+  </div>
+  <!--Grid column-->
+
+  
+</div>
+<!--Grid row-->
+
+<!--Google Maps-->
+
+    <!-- Copy -->
+    <div class="custom-control custom-checkbox mb-1 mt-2">
+        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+    </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-unique btn-block">Submit <i class="fas fa-paper-plane-o ml-1"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal: Create Issue -->
+<!--Main layout-->
+
+
+<style>
+.map-container-5{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-5 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
+
+
+
+ 
+</style>
 
 <!-- Footer starts -->
 
@@ -554,20 +841,45 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.js"></script>
 
-<!-- Javascript for first parallex starts -->
-<script>
-    // object-fit polyfill run
-    objectFitImages();
+  <!--Upload Image Script -->
+  <script>
+  	$(document).ready( function() {
+    	$(document).on('change', '.btn-file :file', function() {
+		var input = $(this),
+			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+		input.trigger('fileselect', [label]);
+		});
 
-    /* init Jarallax */
-    jarallax(document.querySelectorAll('.jarallax'));
+		$('.btn-file :file').on('fileselect', function(event, label) {
+		    
+		    var input = $(this).parents('.input-group').find(':text'),
+		        log = label;
+		    
+		    if( input.length ) {
+		        input.val(log);
+		    } else {
+		        if( log ) alert(log);
+		    }
+	    
+		});
+		function readURL(input) {
+		    if (input.files && input.files[0]) {
+		        var reader = new FileReader();
+		        
+		        reader.onload = function (e) {
+		            $('#img-upload').attr('src', e.target.result);
+		        }
+		        
+		        reader.readAsDataURL(input.files[0]);
+		    }
+		}
 
-    jarallax(document.querySelectorAll('.jarallax-keep-img'), {
-      keepImg: true,
-    });
+		$("#imgInp").change(function(){
+		    readURL(this);
+		}); 	
+	});
   </script>
-  <!-- Javascript for first parallex starts -->
-  
+  <!--Upload Image Script -->
 </body>
 
 </html>
