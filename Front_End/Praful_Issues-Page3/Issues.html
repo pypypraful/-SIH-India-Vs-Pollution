@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  <title>Issues</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -24,7 +24,7 @@
   <!-- Top NavBar starts -->
   <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg double-nav navbar-dark black">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="../index.html">
         <img src="../Logo.png" height="40" alt="mdb logo">
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -40,25 +40,25 @@
           <a class="nav-link dropdown-toggle font-weight-bold" id="newsDropdownMenu" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">NEWS</a>
           <div class="dropdown-menu dropdown-primary" aria-labelledby="newsDropdownMenu">
-            <a class="dropdown-item" href="#">News Release</a>
-            <a class="dropdown-item" href="#">Blogs</a>
-            <a class="dropdown-item" href="#">Impact Stories</a>
+            <a class="dropdown-item" href="../nancy_news/index.html">News Release</a>
+            <a class="dropdown-item" href="../Praful_Blog-Page4/blog.html">Blogs</a>
+            <a class="dropdown-item" href="../nancy_impactstories/index.html">Impact Stories</a>
           </div>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle font-weight-bold" id="issuesDropdownMenu" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">ISSUES</a>
           <div class="dropdown-menu dropdown-primary" aria-labelledby="issuesDropdownMenu">
-            <a class="dropdown-item" href="#">Create Issue</a>
-            <a class="dropdown-item" href="#">View Issue</a>
-            <a class="dropdown-item" href="#">Sign a Petition</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalContactForm">Create Issue</a>
+            <a class="dropdown-item" href="../Praful_Issues-Page3/Issues.html">View Issue</a>
+            <a class="dropdown-item" href="../Saurabh_SignPetition-view-issue/Petition.html">Sign a Petition</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-weight-bold" href="#">CAMPAIGN</a>
+          <a class="nav-link font-weight-bold" href="../Praful_Campaign-Page4/campaign.html">CAMPAIGN</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-weight-bold" href="#">LOGIN</a>
+          <a class="nav-link font-weight-bold" href="#" data-toggle="modal" data-target="#modalLRForm">LOGIN</a>
         </li>
       </ul>
     </div>
@@ -91,146 +91,87 @@
 <!-- Intro section ends -->
 
 <!-- Main content starts -->
-<div class="container">
+<div class="container-fluid">
+  
+  <!--Sabse upar wali row starts-->
   <div class="row no-gutters">
 
+
     <!-- Leftmost part starts -->
-    <div class="col-lg-3">
-      <form action=""class="form-inline md-form mr-auto mb-2">
-        <input class="form-control mr-sm-0" type="text" placeholder="Search By Keyword" aria-label="Search">
-        <div class="input-group-append"><button class="btn aqua-gradient btn-rounded btn-sm my-0" type="submit"><i class="fas fa-search" aria-hidden="true"></i></button></div>
-      </form><hr>
-      <form action="" class="md-form mr-auto mb-2 mt-0">
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="chip1" >
-          <label class="form-check-label" for="chip1">
-            <div class="chip indigo lighten-4 indigo-text">
-              Air
-            </div>
-          </label>
-          <input type="checkbox" class="form-check-input" id="chip2" >
-          <label class="form-check-label" for="chip2">
-            <div class="chip indigo lighten-4 indigo-text">
-              Water
-            </div>
-          </label>
-          <input type="checkbox" class="form-check-input" id="chip3">
-          <label class="form-check-label" for="chip3">
-            <div class="chip indigo lighten-4 indigo-text">
-              Soil
-            </div>
-          </label>
-          <input type="checkbox" class="form-check-input" id="chip4">
-          <label class="form-check-label" for="chip4">
-            <div class="chip indigo lighten-4 indigo-text">
-              Chemical
-            </div>
-          </label>
-        </div>
-        <button class="btn aqua-gradient btn-rounded btn-sm my-0" type="submit">Search By Category <i class="fas fa-search" aria-hidden="true"></i></button>
-      </form><hr>
-      <form action="" class="md-form mr-auto mb-2 mt-0">
-        <!-- Material checked -->
+    <div class="col-sm-3">
+    <div class="card m-2">
+
+      <form class="form-inline active-cyan-4 mt-3 ml-4">
+		  <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search By Keyword" aria-label="Search">
+		  <i class="fas fa-search" aria-hidden="true"></i>
+	 </form><br>
+     
+      <form action="" class="md-form mt-1 ml-4">
+      <h6 style="font-weight: bold; color: grey;">FILTER BY CATEGORY </h6>
+      <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="materialInline1">
+      <label class="form-check-label" for="materialInline1">Air</label><br>
+      <input type="checkbox" class="form-check-input" id="materialInline2">
+      <label class="form-check-label" for="materialInline2">Water</label><br>
+      <input type="checkbox" class="form-check-input" id="materialInline3">
+      <label class="form-check-label" for="materialInline3">Land</label><br>
+      <input type="checkbox" class="form-check-input" id="materialInline3">
+      <label class="form-check-label" for="materialInline3">Noise</label>
+      </div>
+      </form><hr><br>
+
+
+      <form action="" class="md-form ml-4 mb-2 mt-0">
+      	<h6 style="font-weight: bold; color: grey;">SORT BY</h6>
         <div class="form-check">
           <input type="radio" class="form-check-input" id="sort1" name="groupOfMaterialRadios">
-          <label class="form-check-label" for="sort1">NEWEST</label>
+          <label class="form-check-label" for="sort1">NEWEST</label><br>
           <input type="radio" class="form-check-input" id="sort2" name="groupOfMaterialRadios">
           <label class="form-check-label" for="sort2">OLDEST</label>
         </div><br>
-        <button class="btn aqua-gradient btn-rounded btn-sm my-0" type="submit">SORT <i class="fas fa-search" aria-hidden="true"></i></button>
       </form><hr>
 
-      <!-- Subscribing Button starts -->
-      <div class="text-center">
-        <button type="button" class="btn morpheus-den-gradient btn-lg btn-block mt-1" data-toggle="modal" data-target="#subscribeForm">Subscribe to our newsletter</button>
-      </div>
-      <!-- Subscribing button ends -->
-      <hr>
+      <!-- Get Updates start -->
+      <!-- Material form subscription -->
+      <div class="card mt-2" style="background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK9RIGJ9Dk17cSzQeYY-D7nqnpi7Se5oNR5t4lgm0Mp7d0xaP15A);">
 
+        <h5 class="card-header success-color white-text text-center">
+          <strong>Subscribe to Newsletter</strong>
+        </h5>
 
-      <!-- Subscribing Modal starts-->
-      <div class="modal fade" id="subscribeForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog form-dark" role="document">
-        <!--Content-->
-        <div class="modal-content card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg');">
-          <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
-            <!--Header-->
-            <div class="modal-header text-center">
-              <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><a
-                class="green-text font-weight-bold"><strong> SUBSCRIBE US</strong></a></h3>
-                <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+        <!--Card content-->
+        <div class="card-body px-lg-5">
+          <!-- Form -->
+          <form class="text-center" style="color: #757575;">
+            <!-- Name -->
+            <div class="md-form mt-3">
+              <input type="text" id="materialSubscriptionFormPasswords" class="form-control">
+              <label for="materialSubscriptionFormPasswords">Name</label> </div>
+
+              <!-- E-mai -->
+              <div class="md-form">
+                <input type="email" id="materialSubscriptionFormEmail" class="form-control">
+                <label for="materialSubscriptionFormEmail">E-mail</label>
               </div>
-              <!--Body-->
-              <div class="modal-body">
-                <!--Body-->
-                <div class="md-form">
-                  <input type="email" id="name" class="form-control validate white-text">
-                  <label data-error="wrong" data-success="right" for="name">Your Name</label>
-                </div>
-                <div class="md-form">
-                  <input type="email" id="email5" class="form-control validate white-text">
-                  <label data-error="wrong" data-success="right" for="email5">Your email</label>
-                </div>
-
-                <div class="md-form">
-                  <input type="email" id="pincode" class="form-control validate white-text">
-                  <label data-error="wrong" data-success="right" for="pincode">Your Pincode</label>
-                  <div class="form-group mt-0">
-                    <input class="form-check-input" type="checkbox" id="checkbox624">
-                    <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
-                      Terms and Conditions</a></label>
-                    </div>
-                  </div>
-
-                  <!--Grid row-->
-                  <div class="row d-flex align-items-center mb-4">
-
-                    <!--Grid column-->
-                    <div class="text-center mb-3 col-md-12">
-                      <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1" data-toggle="modal" data-target="#successSubscribe">Subscribe Me</button>
-                    </div>
-                    <!--Grid column-->
-
-                  </div>
-                  <!--Grid row-->
-
-                </div>
+              <!-- E-mai -->
+              <div class="md-form">
+                <input type="number" id="materialSubscriptionFormEmail" class="form-control">
+                <label for="materialSubscriptionFormEmail">Pin Code</label>
               </div>
-            </div>
-            <!--/.Content-->
+              <!-- Sign in button -->
+              <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect mt-5 mb-3" type="submit"><strong>GET UPDATES</strong></button>
+            </form>
+            <!-- Form -->
           </div>
         </div>
-        <!-- Subscribing Modal ends-->
-        <!-- Success Subscribing Modal starts-->
-        <div class="modal fade" id="successSubscribe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-notify modal-success" role="document">
-          <!--Content-->
-          <div class="modal-content">
-            <!--Header-->
-
-            <!--Body-->
-            <div class="modal-body">
-              <div class="text-center">
-                <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
-                <p>Thanks For Subscribing Us</p>
-              </div>
-            </div>
-          </div>
-          <!--/.Content-->
-        </div>
-      </div>
-
-      <!-- Success Subscribing Modal ends-->
+        <!-- Material form subscription -->
+        <!-- Get updates ends --> 
+   </div>
+   </div>
+   <!-- Leftmost Part ends -->
 
 
-    </div>
 
-
-    <!-- Leftmost Part ends -->
 
     <!-- Center Body Starts -->
     <div class="col-lg-6">
@@ -240,17 +181,18 @@
           <div class="col-sm-5">
             <!-- Card image -->
             <div class="view overlay zoom">
-              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/food.jpg" alt="Card image cap">
+              <img class="card-img-top" src="https://d1u4oo4rb13yy8.cloudfront.net/nipjaycepf-1453029400.jpg"class="img-fluid" alt="Sample image for first version of blog listing" style="height: 200px;" alt="Card image cap">
 
             </div>
-            <button type="button" class="btn btn-dark-green btn-lg btn-block"><i class="fas fa-signature"></i> Sign Petition</button>
+            <a href="../Saurabh_SignPetition-view-issue/Petition.html">
+            <button type="button" class="btn btn-light-blue btn-lg btn-block"><i class="fas fa-signature"></i> Sign Petition</button></a>
           </div>
           <div class="col-sm-7">
             <!-- Card content -->
             <div class="m-2">
               <!-- Title -->
-              <a class="font-weight-bold text-justify">Green New Deal Must Transform Our Food System to Save Our Climate</a>
-              <p class="text-justify font-weight-normal">Our current industrial food system, and the policies that prop it up, are a central part of the climate crisis, and transforming them must be a central part of the Green New Deal solution.</p>
+              <a class=" h4 font-weight-bold text-justify">HELP DELHI BREATHE</a>
+              <p class="text-justify font-weight-normal">Delhi has only met the WHO standard for seven days in the last two years.Delhi is one of the the world’s most polluted cities, with air pollution reaching crisis levels – and that’s having a very serious effect on all of us who live there.Air pollution was responsible for the death of more than 1 lakh children in India in 2016.It is now estimated that 30,000 people are dying prematurely every year in Delhi because of air pollution.Scary right?</p>
             </div>
             <!-- Card footer -->
 
@@ -268,7 +210,7 @@
               <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/food.jpg" alt="Card image cap">
 
             </div>
-            <button type="button" class="btn btn-dark-green btn-lg btn-block"><i class="fas fa-signature"></i> Sign Petition</button>
+            <button type="button" class="btn btn-light-blue btn-lg btn-block"><i class="fas fa-signature"></i> Sign Petition</button>
           </div>
           <div class="col-sm-7">
             <!-- Card content -->
@@ -293,7 +235,7 @@
               <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/food.jpg" alt="Card image cap">
 
             </div>
-            <button type="button" class="btn btn-dark-green btn-lg btn-block"><i class="fas fa-signature"></i> Sign Petition</button>
+            <button type="button" class="btn btn-light-blue btn-lg btn-block"><i class="fas fa-signature"></i> Sign Petition</button>
           </div>
           <div class="col-sm-7">
             <!-- Card content -->
@@ -308,37 +250,14 @@
         </div>
       </div>
       <!-- Cards3 Ends -->
-
-      <!-- Card4 starts -->
-      <div class="card m-2 grey lighten-4 mb-4 ">
-        <div class="row no-gutters">
-          <div class="col-sm-5">
-            <!-- Card image -->
-            <div class="view overlay zoom">
-              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/food.jpg" alt="Card image cap">
-
-            </div>
-            <button type="button" class="btn btn-dark-green btn-lg btn-block"><i class="fas fa-signature"></i> Sign Petition</button>
-          </div>
-          <div class="col-sm-7">
-            <!-- Card content -->
-            <div class="m-2">
-              <!-- Title -->
-              <a class="font-weight-bold text-justify">Green New Deal Must Transform Our Food System to Save Our Climate</a>
-              <p class="text-justify font-weight-normal">Our current industrial food system, and the policies that prop it up, are a central part of the climate crisis, and transforming them must be a central part of the Green New Deal solution.</p>
-            </div>
-            <!-- Card footer -->
-
-          </div>
-        </div>
-      </div>
-      <!-- Cards4 Ends -->
       <div class="d-flex justify-content-center">
         <button type="button" class="btn btn-outline-success btn-rounded waves-effect">Show More</button>
       </div>
 
     </div>
     <!-- Center Part ends -->
+
+
     <!-- Floating up button starts-->
     <div class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;">
       <a href="#top-section" class="btn-floating btn-large green">
@@ -348,40 +267,35 @@
     <!-- Floating up button ends-->
 
 
-    <!-- Rightmost part starts -->
-    <div class="col-lg-2 ml-2">
-      <button type="button" class="btn btn-danger btn-lg btn-block mt-1">Something's not right?<br>Create Your Own Issue</button>
+ <!-- Rightmost part starts -->
+ <div class="col-lg-3">
+ <div class="card mt-1">
+      <span style="font-weight: bold; font-size: 32px; color: maroon;" class="ml-2">Something's Not Right? </span>
+      <a href="#" data-toggle="modal" data-target="#modalContactForm">
+      <button type="button" class="btn btn-unique waves-effect btn-block">CREATE YOUR OWN ISSUE</button>
+      </a>
       <hr>
       <!-- Follow on twitter section starts -->
-      <p class="h4 h4-responsive font-weight-bold text-uppercase" style="font-family:Raleway">Follow us on Twitter</p>
-      <a href=""class="h4 h4-responsive font-weight-bold text-uppercase" style="font-family:Spectral; color:rgb(27, 94, 32);">@cosmo_green</a>
-      <div class="mr-5 text-justify font-weight-normal">
-        <p> <div style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;">A bipartisan group of lawmakers just introduced a bill to ban drilling in Alaska's Arctic Wildlife Refuge! “We can just introduced
-        </div>
-        <a href="">https://t.co/SB8QqmO09h </a>
-        <div class="inline"> 29 minutes ago </div>
-      </p>
-    </div>
-    <div class="mr-5 text-justify font-weight-normal">
-      <p> <div style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;">A bipartisan group of lawmakers just introduced a bill to ban drilling in Alaska's Arctic Wildlife Refuge! “We can just introduced
-      </div>
-      <a href="">https://t.co/SB8QqmO09h </a>
-      <div class="inline"> 29 minutes ago </div>
-    </p>
-  </div>
-  <div class="mr-5 text-justify font-weight-normal">
-    <p> <div style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;">A bipartisan group of lawmakers just introduced a bill to ban drilling in Alaska's Arctic Wildlife Refuge! “We can just introduced
-    </div>
-    <a href="">https://t.co/SB8QqmO09h </a>
-    <div class="inline"> 29 minutes ago </div>
-  </p>
-</div>
-<!-- Follow on twitter section ends -->
+      <div class="card-content ml-4 mr-2">   	
+      <p class="h4 h4-responsive font-weight-bold text-uppercase" style="font-family:Raleway">Follow us on Twitter</p> <hr>
+      <a href="https://twitter.com/SIH2019?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @SIH2019</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <br>
+      <a class="twitter-timeline" data-height="592" href="https://twitter.com/SIH2019?ref_src=twsrc%5Etfw">Tweets by SIH2019</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      <!--Follow on twitter section ends -->
 
 </div>
+</div>
+</div>
 <!-- Rightmost part ends above -->
-</div>    <!--Sabse upar wali row ka ending div-->
-<p class="h4 h4-responsive mt-5">You May Also like</p>
+
+</div>
+<!--Sabse upar wali row ends-->    
+
+
+
+
+<p class="h4 h4-responsive mt-2">You May Also like</p>
 <hr class="mb-3 black">
 <!-- extra thingds -->
 <div id="carouselExampleControls" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
@@ -472,135 +386,436 @@
                     <i class="fas fa-chevron-right green"></i>
                     <span class="sr-only">Next</span></div>
                   </a>
-                </div>
+               </div>  
+               <!-- container wala ending div-->
+      
 
-              </div>    <!-- container wala ending div-->
-
-              <!-- Main content ends -->
-
-
-
-
-
-              <!-- Main Body Ends -->
+   </div>        
+   <!-- Main content ends -->
+   <!-- Main Body Ends -->
 
 
-              <!-- Footer starts -->
-
-              <!-- Footer -->
-              <footer class="page-footer font-small green darken-4">
-
-                <!-- Footer Links -->
-                <div class="container">
-
-                  <!-- Grid row-->
-                  <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 mb-3">
-                      <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!">About us</a>
-                      </h6>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 mb-3">
-                      <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!">Products</a>
-                      </h6>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 mb-3">
-                      <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!">Awards</a>
-                      </h6>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 mb-3">
-                      <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!">Help</a>
-                      </h6>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 mb-3">
-                      <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!">Contact</a>
-                      </h6>
-                    </div>
-                    <!-- Grid column -->
-
-                  </div>
-                  <!-- Grid row-->
-                  <hr class="rgba-white-light" style="margin: 0 15%;">
-
-                  <!-- Grid row-->
-                  <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
 
 
-                    <!-- Grid column -->
-                    <div class="col-md-8 col-12 mt-5">
-                      <h4 class="text-uppercase font-weight-bold">What do we do</h4>
-                      <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-                      </div>
-                      <!-- Grid column -->
 
-                    </div>
-                    <!-- Grid row-->
-                    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-top: -50px;">
+  <div class="modal-dialog cascading-modal modal-dialog-centered" role="document">
+    <!--Content-->
+    <div class="modal-content">
 
-                    <!-- Grid row-->
-                    <div class="row pb-3">
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
 
-                      <!-- Grid column -->
-                      <div class="col-md-12">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+              Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+              Register</a>
+          </li>
+        </ul>
 
-                        <div class="mb-5 flex-center">
+        <!-- Tab panels -->
+        <div class="tab-content">
+          <!--Panel 7-->
+          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
 
-                          <!-- Facebook -->
-                          <a class="fb-ic">
-                            <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
-                          </a>
-                          <!-- Twitter -->
-                          <a class="tw-ic">
-                            <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
-                          </a>
-                          <!-- Google +-->
-                          <a class="gplus-ic">
-                            <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
-                          </a>
-                          <!--Instagram-->
-                          <a class="ins-ic">
-                            <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
-                          </a>
+            <!--Body-->
+      <div class="modal-body mx-4">
+        <!--Body-->
+        <div class="md-form mb-5">
+        	<i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="Form-email1" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+        </div>
 
-                        </div>
+        <div class="md-form pb-3">
+        	<i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="Form-pass1" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+          <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
+              Password?</a></p>
+        </div>
 
-                      </div>
-                      <!-- Grid column -->
+        <div class="text-center mb-3">
+          <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
+        </div>
+        <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
+          with:</p>
 
-                    </div>
-                    <!-- Grid row-->
+        <div class="row my-3 d-flex justify-content-center">
+          <!--Facebook-->
+          <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
+          <!--Twitter-->
+          <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-twitter"></i></button>
+          <!--Google +-->
+          <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"></i></button>
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="modal-footer mx-5 pt-3 mb-1">
+        <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="blue-text ml-1">
+            Sign Up</a></p>
+      </div>
 
-                  </div>
-                  <!-- Footer Links -->
+    </div>
+          <!--/.Panel 7-->
 
-                  <!-- Copyright -->
-                  <div class="footer-copyright text-center py-3">© 2019 Copyright: TESLA2.0
-                  </div>
-                  <!-- Copyright -->
+          <!--Panel 8-->
+          <div class="tab-pane fade" id="panel8" role="tabpanel">
 
-                </footer>
+            <!--Body-->
+                 <!--Body-->
+      <div class="modal-body mx-4">
+        <!--Body-->
+        <div class="md-form mb-3">
+        	<i class="fas fa-user prefix grey-text"></i>
+          <input type="email" id="Form-email1" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="Form-email1">Enter Name</label>
+        </div>
 
-                <!-- Footer ends -->
+        <div class="md-form mb-3">
+        	<i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="Form-email1" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="Form-email1">Enter Email</label>
+        </div>
+
+        <div class="md-form mb-3">
+        	<i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="Form-pass1" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="Form-pass1">Enter Password</label>
+        </div>
+
+         <div class="md-form mb-3">
+        	<i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="Form-pass1" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="Form-pass1">Confirm Password</label>
+        </div>
+
+        <div class="md-form">
+        	    <i class="fas fa-phone prefix grey-text"></i>
+                <input type="number" id="phonenumber" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
+                <label for="phonenumber">Phone number (Optional)</label>
+              </div>
+
+        <div class="md-form">
+                <input type="checkbox" class="form-check-input" id="subscribe">
+                <label class="grey-text form-check-label" for="subscribe">Subscribe to our newsletter</label>
+            </div>
+
+        <div class="text-center mb-3">
+          <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign Up</button>
+        </div>
+        <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign Up
+          with:</p>
+
+        <div class="row my-3 d-flex justify-content-center">
+          <!--Facebook-->
+          <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
+          <!--Twitter-->
+          <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-twitter"></i></button>
+          <!--Google +-->
+          <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"></i></button>
+        </div>
+      </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-right">
+                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <!--/.Panel 8-->
+        </div>
+
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login / Register Form-->
+
+
+<!--Modal: Create Issue -->
+
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content" style="background-image: url(https://www.xmple.com/wallpaper/linear-green-white-gradient-1920x1080-c2-90ee90-ffffff-a-345-f-14.svg);">
+      <div class="modal-header text-center" style="background-color: #880E4F;">
+        <h4 class="modal-title w-100 font-weight-bold white-text">CREATE ISSUE</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+       <!-- Name -->
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Title of the Issue">
+
+    <!-- Email -->
+    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+    <!-- Subject -->
+    <select class="browser-default custom-select mb-4">
+        <option value="" selected>Category of Issue</option>
+        <option value="1">Air Pollution</option>
+        <option value="2">Water Pollution</option>
+        <option value="3">Noise Pollution</option>
+        <option value="4">Land Pollution</option>
+    </select>
+
+    <!-- Message -->
+    <div class="form-group">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Issue Description"></textarea>
+    </div>
+
+
+<div class="row">
+<!--Upload Image -->
+<div class="col-md-6 mb-4" >
+	<div class="card card-cascade narrower" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK9RIGJ9Dk17cSzQeYY-D7nqnpi7Se5oNR5t4lgm0Mp7d0xaP15A);">
+      <!--Card content-->
+      <div class="card-body card-body-cascade text-center">
+
+    <div class="form-group">
+        <label class="white-text">Upload Image</label>
+        <div class="input-group">
+            <span class="input-group-btn">
+                <span class="btn btn-md btn-default btn-file">
+                    Browse<input type="file" id="imgInp">                   
+                </span>
+            </span>
+            <input type="text" class="form-control" readonly style="margin-top: 7px; margin-left: -6px;">
+            
+        </div>
+        <img id='img-upload'/>
+    </div>
+</div>
+</div>
+</div>
+<!--Upload Image -->
+
+<!--Google map-->
+
+  <!--Grid column-->
+  <div class="col-md-6 mb-4" >
+
+    <!--Card-->
+    <div class="card card-cascade narrower" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK9RIGJ9Dk17cSzQeYY-D7nqnpi7Se5oNR5t4lgm0Mp7d0xaP15A);">
+
+      <!--Card content-->
+      <div class="card-body card-body-cascade text-center">
+       <label class="white-text">Mark Location on map</label>
+        <!--Google map-->
+        <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 300px">
+          <iframe src="https://maps.google.com/maps?q=Barcelona&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <!--/.Card content-->
+
+    </div>
+    <!--/.Card-->
+
+  </div>
+  <!--Grid column-->
+
+  
+</div>
+<!--Grid row-->
+
+<!--Google Maps-->
+
+    <!-- Copy -->
+    <div class="custom-control custom-checkbox mb-1 mt-2">
+        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+    </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-unique btn-block">Submit <i class="fas fa-paper-plane-o ml-1"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal: Create Issue -->
+<!--Main layout-->
+
+
+<style>
+.map-container-5{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-5 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
+
+
+
+ 
+</style>
+
+
+<!-- Footer starts -->
+
+<!-- Footer -->
+
+<footer class="page-footer font-small black darken">
+
+  <!-- Footer Links -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!">About us</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!">Products</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!">Awards</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!">Help</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a href="#!">Contact</a>
+        </h6>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+    <hr class="rgba-white-light" style="margin: 0 15%;">
+
+    <!-- Grid row-->
+    <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+
+      <!-- Grid column -->
+      <div class="col-md-8 col-12 mt-5">
+        <h4 class="text-uppercase font-weight-bold">What do we do</h4>
+        <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+    <!-- Grid row-->
+    <div class="row pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-12">
+
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+          </a>
+
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright: TESLA2.0
+  </div>
+  <!-- Copyright -->
+
+</footer>
+</div>
+<!-- Footer -->
+
+
+
+
+<!-- Footer ends -->
 
                 <!-- SCRIPTS -->
                 <!-- JQuery -->
@@ -640,6 +855,46 @@
                   }
                 });
                 </script>
+
+                <!--Upload Image Script -->
+  <script>
+  	$(document).ready( function() {
+    	$(document).on('change', '.btn-file :file', function() {
+		var input = $(this),
+			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+		input.trigger('fileselect', [label]);
+		});
+
+		$('.btn-file :file').on('fileselect', function(event, label) {
+		    
+		    var input = $(this).parents('.input-group').find(':text'),
+		        log = label;
+		    
+		    if( input.length ) {
+		        input.val(log);
+		    } else {
+		        if( log ) alert(log);
+		    }
+	    
+		});
+		function readURL(input) {
+		    if (input.files && input.files[0]) {
+		        var reader = new FileReader();
+		        
+		        reader.onload = function (e) {
+		            $('#img-upload').attr('src', e.target.result);
+		        }
+		        
+		        reader.readAsDataURL(input.files[0]);
+		    }
+		}
+
+		$("#imgInp").change(function(){
+		    readURL(this);
+		}); 	
+	});
+  </script>
+  <!--Upload Image Script -->
               </body>
 
               </html>
