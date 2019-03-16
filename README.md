@@ -1,3 +1,3 @@
-# -SIH-India-Vs-Pollution
+# SIH-India-Vs-Pollution
 Project for SmartIndiaHackathon2019
 Tesla2.0
