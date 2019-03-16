@@ -91,78 +91,57 @@
 <!-- Intro section ends -->
 
 <!-- Main content starts -->
-<div class="container">
+<div class="container-fluid">
   <div class="row no-gutters">
 
     <!-- Leftmost part starts -->
     <div class="col-lg-3 my-3">
-      <form action=""class="form-inline md-form mr-auto mb-2">
-        <input class="form-control mr-sm-0" type="text" placeholder="Search By Keyword" aria-label="Search">
-        <div class="input-group-append"><button class="btn aqua-gradient btn-rounded btn-sm my-0" type="submit"><i class="fas fa-search" aria-hidden="true"></i></button></div>
-      </form><hr>
-      <form action="" class="md-form mr-auto mb-2 mt-0">
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="chip1" >
-          <label class="form-check-label" for="chip1">
-            <div class="chip indigo lighten-4 indigo-text">
-              Air
-            </div>
-          </label>
-          <input type="checkbox" class="form-check-input" id="chip2" >
-          <label class="form-check-label" for="chip2">
-            <div class="chip indigo lighten-4 indigo-text">
-              Water
-            </div>
-          </label>
-          <input type="checkbox" class="form-check-input" id="chip3">
-          <label class="form-check-label" for="chip3">
-            <div class="chip indigo lighten-4 indigo-text">
-              Soil
-            </div>
-          </label>
-          <input type="checkbox" class="form-check-input" id="chip4">
-          <label class="form-check-label" for="chip4">
-            <div class="chip indigo lighten-4 indigo-text">
-              Chemical
-            </div>
-          </label>
-        </div>
-        <button class="btn aqua-gradient btn-rounded btn-sm my-0" type="submit">Search By Category <i class="fas fa-search" aria-hidden="true"></i></button>
-      </form><hr>
-      <form action="" class="md-form mr-auto mb-2 mt-0">
-        <!-- Material checked -->
+     <div class="card m-4">
+      <form action="" class="md-form mt-1 ml-4">
+      <h6 style="font-weight: bold; color: grey;">FILTER BY CATEGORY </h6>
+      <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="materialInline1">
+      <label class="form-check-label" for="materialInline1">Air</label><br>
+      <input type="checkbox" class="form-check-input" id="materialInline2">
+      <label class="form-check-label" for="materialInline2">Water</label><br>
+      <input type="checkbox" class="form-check-input" id="materialInline3">
+      <label class="form-check-label" for="materialInline3">Land</label><br>
+      <input type="checkbox" class="form-check-input" id="materialInline3">
+      <label class="form-check-label" for="materialInline3">Noise</label>
+      </div>
+      </form><hr><br>
+
+     <form action="" class="md-form ml-4 mb-2 mt-0">
+        <h6 style="font-weight: bold; color: grey;">SORT BY</h6>
         <div class="form-check">
           <input type="radio" class="form-check-input" id="sort1" name="groupOfMaterialRadios">
-          <label class="form-check-label" for="sort1">NEWEST</label>
+          <label class="form-check-label" for="sort1">NEWEST</label><br>
           <input type="radio" class="form-check-input" id="sort2" name="groupOfMaterialRadios">
           <label class="form-check-label" for="sort2">OLDEST</label>
         </div><br>
-        <button class="btn aqua-gradient btn-rounded btn-sm my-0" type="submit">SORT <i class="fas fa-search" aria-hidden="true"></i></button>
       </form><hr>
 
       <!-- Subscribing Button starts -->
       <div class="text-center">
-        <button type="button" class="btn morpheus-den-gradient btn-lg btn-block mt-1" data-toggle="modal" data-target="#darkModalForm">Subscribe to our newsletter</button>
+        <button type="button" class="btn blue-gradient btn-lg btn-block mt-1" data-toggle="modal" data-target="#orangeModalSubscription">Subscribe to our newsletter</button>
       </div>
       <!-- Subscribing button ends -->
       <hr>
 
 
       <!-- Subscribing Modal starts-->
-      <div class="modal fade" id="darkModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog form-dark" role="document">
-        <!--Content-->
-        <div class="modal-content card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg');">
-          <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
-            <!--Header-->
-            <div class="modal-header text-center">
-              <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><a
-                class="green-text font-weight-bold"><strong> SUBSCRIBE US</strong></a></h3>
-                <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
+     <div class="modal fade" id="orangeModalSubscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-info" role="document">
+        <!--Content--> 
+         <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header text-center">
+        <h4 class="modal-title white-text w-100 font-weight-bold py-2">Subscribe</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
               <!--Body-->
               <div class="modal-body">
                 <!--Body-->
@@ -180,7 +159,7 @@
                   <label data-error="wrong" data-success="right" for="pincode">Your Pincode</label>
                   <div class="form-group mt-0">
                     <input class="form-check-input" type="checkbox" id="checkbox624">
-                    <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
+                    <label for="checkbox624" class="white-text form-check-label"><a href="#" class="green-text font-weight-bold">Accept the
                       Terms and Conditions</a></label>
                     </div>
                   </div>
@@ -190,7 +169,7 @@
 
                     <!--Grid column-->
                     <div class="text-center mb-3 col-md-12">
-                      <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1" data-toggle="modal" data-target="#successSubscribe">Subscribe Me</button>
+                      <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1" data-toggle="modal" data-target="#successSubscribe">Subscribe Me</button>
                     </div>
                     <!--Grid column-->
 
@@ -202,7 +181,7 @@
             </div>
             <!--/.Content-->
           </div>
-        </div>
+        
         <!-- Subscribing Modal ends-->
         <!-- Success Subscribing Modal starts-->
         <div class="modal fade" id="successSubscribe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -227,9 +206,11 @@
       <!-- Success Subscribing Modal ends-->
 
       <!-- Add Blog here starts-->
-      <button type="button" class="btn btn-danger btn-lg btn-block mt-1">Want to add Blog here?<br>Add Your Own Blog</button>
-      <hr>
+      <div class="text-center mb-3 col-md-12">
+      <button type="button" class="btn btn-pink btn-block btn-rounded z-depth-1" data-toggle="modal" data-target="#successSubscribe">Want to add Blog here? Create Your own blog</button>
+      </div>
       <!-- Add Blog here ends -->
+    </div>
     </div>
 
 
